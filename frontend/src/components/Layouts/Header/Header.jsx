@@ -21,9 +21,9 @@ const Header = () => {
         <div className="container top-header-conatiner">
           <div className="top-header-left">
             <div className="phone">
-              <a href="/">
+              <a href="tel:+1 512 333 2684">
                 <BsFillTelephoneFill />
-                03011428077
+                +1 512 333 2684
               </a>
             </div>
             <div className="email">

@@ -1,29 +1,19 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import "./Cart.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ConfirmOrder = () => {
-  const { shippingInfo, cartItems, totalPrice, subTotal } = useSelector(
+  const { shippingInfo, cartItems, totalPrice } = useSelector(
     (state) => state.cart
   );
-  //   const { user } = useSelector((state) => state.user);
-  //   const dispatch = useDispatch();
-  //   const navigate = useNavigate();
 
-  //   const order = {
-  //     shippingInfo,
-  //     orderItems: cartItems,
-  //     itemsPrice: subTotal,
-  //     shippingPrice: shipping,
-  //     totalPrice: totalPrice,
-  //   };
+  const navigate = useNavigate();
 
   const orderHandler = async () => {
-    // dispatch(createOrder(order));
-    // navigate("/ordersuccess");
-    // localStorage.removeItem("cartItems");
-    // localStorage.removeItem("price");
+    navigate("/");
+    localStorage.removeItem("cartItems");
+    localStorage.removeItem("price");
   };
 
   return (
@@ -97,11 +87,11 @@ const ConfirmOrder = () => {
             <div className="confirm-cart">
               <div>
                 <b>Subtotal</b>
-                <p>{totalPrice} RS</p>
+                <p>${totalPrice}</p>
               </div>
               <div>
                 <b>Total</b>
-                <p>{totalPrice} RS</p>
+                <p>${totalPrice}</p>
               </div>
             </div>
             <button onClick={orderHandler}>Place Order</button>

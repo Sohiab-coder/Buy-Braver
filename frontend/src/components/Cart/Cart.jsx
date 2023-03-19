@@ -66,7 +66,7 @@ const Cart = () => {
                           </button>
                         </td>
                         <td className="cart-prod-delete">
-                          <AiFillDelete onClick={() => deleteHandler(2)} />
+                          <AiFillDelete onClick={() => deleteHandler(cart.product)} />
                         </td>
                       </tr>
                     ))}
