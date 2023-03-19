@@ -1,0 +1,390 @@
+main {
+  max-width: 100%;
+  background-color: white;
+  margin: auto;
+  height: 100%;
+  overflow-x: auto;
+}
+
+main table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+th {
+  background-color: #a6cc41;
+  color: white;
+}
+
+td {
+  color: #333;
+  font-size: 20px;
+}
+
+tr td a {
+  color: red;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid tomato;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 55%;
+  margin: auto;
+}
+
+.empty-cart img {
+  width: 100%;
+}
+
+.empty-cart button {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 12px 20px;
+  background-color: #0b7cac;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.empty-cart button:hover {
+  background-color: #05638b;
+}
+
+.empty-cart button a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.empty-cart button a svg {
+  margin-right: 10px;
+}
+
+.delete svg {
+  color: red;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cart-prod-img img {
+  width: 60px;
+}
+
+.cart-prod-name {
+  font-size: 18px;
+  color: #333;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.cart-qty-btns button {
+  width: 30px;
+  height: 30px;
+  background-color: #d5d5d5;
+  border: 1px solid #ccc;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cart-qty-btns input {
+  width: 70px;
+  height: 30px;
+  border: none;
+  padding-left: 12px;
+  font-size: 25px;
+  outline: none;
+}
+
+.cart-prod-delete svg {
+  color: red;
+  cursor: pointer;
+  font-size: 25px;
+}
+.cart-price-container {
+  text-align: end;
+  margin-top: 50px;
+  padding-top: 2rem;
+}
+
+.cart-price-container h2 {
+  font-size: 35px;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-price-container .price-cart {
+  width: 25rem;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+.cart-price-container .price-cart div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.cart-price-container .price-cart div b {
+  color: #333;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.cart-price-container .price-cart div p {
+  color: #57bf6d;
+  font-family: "Roboto";
+  font-size: 30px;
+}
+
+.cart-price-container button,
+.orderSuccess button {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 12px 20px;
+  background-color: #0b7cac;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cart-price-container button:hover,
+.shippingBox .shippingForm button:hover {
+  background-color: #05638b;
+}
+
+.cart-price-container button a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.shippingBox {
+  margin-top: 2rem;
+}
+
+.shippingBox .shippingForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.shippingBox .shipping-heading {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.shippingBox .shipping-heading h2 {
+  font-size: 35px;
+  color: #a6cc41;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.shippingBox .shippingForm div svg {
+  color: #a6cc41;
+  font-size: 30px;
+  position: absolute;
+  margin: 0 10px;
+}
+
+.shippingBox .shippingForm div {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.shippingBox .shippingForm div input,
+.shippingBox .shippingForm div select {
+  padding: 7px 7px 7px 50px;
+  font-size: 20px;
+  width: 100%;
+  color: #333;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.shippingBox .shippingForm button {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 12px 20px;
+  background-color: #0b7cac;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: #fff;
+}
+
+.order-heading {
+  margin: 3rem 0;
+  color: tomato;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.confirm-order-container {
+  width: 100%;
+  display: flex;
+}
+
+.confirm-order-container .confirm-order-container-left {
+  width: 75%;
+  padding: 2rem;
+}
+
+.confirm-order-container .confirm-order-container-left .order-details div {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.confirm-order-container .confirm-order-container-left .order-details b {
+  font-size: 25px;
+  color: #57bf6d;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.confirm-order-container .confirm-order-container-left .order-details p {
+  font-size: 25px;
+  margin-left: 1rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #333;
+}
+
+.confirm-order-container .confirm-order-container-right {
+  width: 25%;
+  padding: 2rem;
+}
+
+.confirm-order-container .confirm-order-container-right .confirm-cart div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.confirm-order-container .confirm-order-container-right .confirm-cart b {
+  color: #57bf6d;
+  font-size: 25px;
+  font-family: "Roboto";
+}
+
+.confirm-order-container .confirm-order-container-right .confirm-cart p {
+  font-size: 25px;
+  color: #333;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.confirm-order-container .confirm-price-container button {
+  font-size: 22px;
+  padding: 12px 20px;
+  background-color: #0b7cac;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.confirm-order-container .confirm-price-container button:hover,
+.orderSuccess button:hover {
+  background-color: #05638b;
+}
+
+@media only screen and (max-width: 992px) {
+  .shippingBox .shippingForm {
+    width: 75%;
+  }
+
+  .confirm-order-container {
+    display: block;
+  }
+
+  .confirm-order-container .confirm-order-container-left,
+  .confirm-order-container .confirm-order-container-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .confirm-order-container .confirm-order-container-left .order-details b,
+  .confirm-order-container .confirm-order-container-right .confirm-cart b {
+    font-size: 25px;
+  }
+
+  .confirm-order-container .confirm-order-container-left .order-details p,
+  .confirm-order-container .confirm-order-container-right .confirm-cart p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-product {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .cart-product .qty-btns-delete-icon {
+    margin-top: 15px;
+  }
+
+  .empty-cart {
+    width: 70%;
+  }
+
+  .cart-price-container .price-cart {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .step-icon p {
+    font-size: 16px;
+  }
+
+  .shippingBox .shippingForm {
+    width: 100%;
+  }
+
+  .confirm-order-container {
+    display: block;
+  }
+
+  .confirm-order-container .confirm-order-container-left,
+  .confirm-order-container .confirm-order-container-right {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .confirm-order-container .confirm-order-container-left .order-details b,
+  .confirm-order-container .confirm-order-container-right .confirm-cart b {
+    font-size: 18px;
+  }
+
+  .confirm-order-container .confirm-order-container-left .order-details p,
+  .confirm-order-container .confirm-order-container-right .confirm-cart p {
+    font-size: 18px;
+  }
+
+  .orderSuccess p {
+    font-size: 18px;
+  }
+}

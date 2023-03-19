@@ -1,0 +1,197 @@
+.top-header {
+  background-color: #a6cc41;
+  padding: 1rem;
+}
+
+.top-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.phone,
+.email {
+  margin-right: 3rem;
+}
+
+.phone a,
+.email a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.phone a:hover,
+.email a:hover {
+  color: #333;
+}
+
+.phone a svg,
+.email a svg {
+  margin-right: 13px;
+}
+
+.top-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-header-right a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #333;
+  margin-right: 1rem;
+}
+
+.top-header-right a:last-child {
+  margin-right: 0;
+}
+
+.top-header-right a svg {
+  color: #fff;
+  font-size: 25px;
+}
+
+.bottom-header {
+  padding: 3rem;
+}
+
+.menu {
+  width: 60%;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin-right: 2rem;
+}
+
+.menu ul li a {
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #a6cc41;
+}
+
+.cart {
+  width: 20%;
+}
+
+.cart a svg {
+  font-size: 35px;
+  color: #a6cc41;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo a {
+  width: 100%;
+  display: inline-block;
+}
+
+.logo a img {
+  width: 100%;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #333;
+  border: none;
+  padding: 6px;
+  font-size: 20px;
+  display: none;
+}
+
+.menu button svg {
+  color: #a6cc41;
+}
+
+.top-header-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-header-container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-header {
+    padding: 0.5rem;
+  }
+
+  .top-header-conatiner{
+    display: block;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .phone {
+    margin-right: 1rem;
+  }
+
+  .phone a,
+  .email a {
+    font-size: 16px;
+  }
+
+  .menu button {
+    display: block;
+  }
+
+  .flex-1 {
+    display: block;
+  }
+
+  .top-header-right {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .bottom-header {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .menu .list-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: aqua;
+    width: 300px;
+    height: 100vh;
+    transform: translateX(-100%);
+  }
+
+  .active {
+    transform: none;
+  }
+}

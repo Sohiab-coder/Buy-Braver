@@ -1,0 +1,56 @@
+.contact-img img {
+  width: 100%;
+}
+
+.contact-form {
+  background-color: #0d263c;
+  padding: 4rem;
+}
+
+.contact-form form div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.contact-form form div label {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.contact-form form div input,
+.contact-form form div textarea {
+  outline: none;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.contact-form form button {
+  background-color: #13aff0;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 22px;
+  font-family: "Roboto";
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form form button:hover {
+  background-color: #0b80b1;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form form div {
+    width: 100%;
+  }
+}
