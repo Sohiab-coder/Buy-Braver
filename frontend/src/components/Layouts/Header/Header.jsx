@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./header.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
@@ -15,6 +15,12 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
+  const navRef = useRef();
+
+  const clickHandler = () => {
+    navRef.current.classList.toggle("active");
+  };
+
   return (
     <header id="header">
       <div className="top-header">
@@ -23,7 +29,7 @@ const Header = () => {
             <div className="phone">
               <a href="tel:+1 512 333 2684">
                 <BsFillTelephoneFill />
-                +1 512 333 2684
+                +15123332684
               </a>
             </div>
             <div className="email">
@@ -54,21 +60,21 @@ const Header = () => {
             </Link>
           </div>
           <div className="menu">
-            <ul className="list-item">
-              <li>
+            <ul ref={navRef} className="list-item">
+              <li onClick={clickHandler}>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li onClick={clickHandler}>
                 <Link to="/shop">Shop</Link>
               </li>
-              <li>
+              <li onClick={clickHandler}>
                 <Link to="/about">About Us</Link>
               </li>
-              <li>
+              <li onClick={clickHandler}>
                 <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
-            <button>
+            <button onClick={clickHandler}>
               <GiHamburgerMenu />
             </button>
           </div>

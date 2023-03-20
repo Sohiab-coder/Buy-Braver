@@ -142,7 +142,7 @@
     padding: 0.5rem;
   }
 
-  .top-header-conatiner{
+  .top-header-conatiner {
     display: block;
   }
 
@@ -185,13 +185,29 @@
     top: 0;
     left: 0;
     display: block;
-    background-color: aqua;
+    background-color: #fff;
     width: 300px;
     height: 100vh;
+    z-index: 111;
+    z-index: 111;
     transform: translateX(-100%);
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .active {
+  .list-item li {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .menu .list-item li a {
+    font-size: 24px;
+  }
+
+  .menu .active {
     transform: none;
   }
 }
